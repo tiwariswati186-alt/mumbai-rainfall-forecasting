@@ -4,7 +4,6 @@ Time-series analysis and forecasting of Mumbai monthly rainfall using 121 years 
 
 ## Dataset
 - File: `mumbai-monthly-rains.csv` (121 years x 12 months)
-- Source: [add dataset link here]
 
 ## Approach
 1. EDA: annual trend, monthly distribution, heatmap, seasonal decomposition
@@ -27,15 +26,6 @@ Time-series analysis and forecasting of Mumbai monthly rainfall using 121 years 
 | XGBoost | 197.1 | 0.684 |
 
 Holt-Winters (additive) has the lowest RMSE, but it is only slightly better than the simple monthly-average baseline. Most of the predictable signal in this data is seasonality.
-
-## How to run
-```bash
-git clone https://github.com/tiwariswati186-alt/mumbai-rainfall-forecasting.git
-cd mumbai-rainfall-forecasting
-pip install -r requirements.txt
-jupyter notebook Rain_Forecasting.ipynb
-```
-Keep `mumbai-monthly-rains.csv` in the same folder as the notebook. Charts are saved in the `figures/` folder.
 
 ## Tech stack
 Python, Pandas, NumPy, Statsmodels, Scikit-Learn, XGBoost, SciPy, Matplotlib, Seaborn
